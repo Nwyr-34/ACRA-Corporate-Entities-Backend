@@ -21,7 +21,7 @@ public class CorporateEntity {
     @Column(name = "uen")
     private String uen; // Unique Entity Number
 
-    @Column(nullable = false, name = "issuance_agency_id")
+    @Column(name = "issuance_agency_id", columnDefinition = "varchar(10) default 'ACRA'")
     private String issuanceAgencyId;
 
     @Column(nullable = false, name = "entity_name")
@@ -50,7 +50,7 @@ public class CorporateEntity {
     @Column(name = "uen_issue_date")
     private Date uenIssueDate;
 
-    @Column(name = "address_type")
+    @Column(name = "address_type", columnDefinition = "varchar(255) default 'LOCAL'")
     private String addressType;
 
     @Column(name = "block")
@@ -59,13 +59,13 @@ public class CorporateEntity {
     @Column(name = "street_name")
     private String streetName;
 
-    @Column(name = "level_no")
+    @Column(name = "level_no", columnDefinition = "varchar(255) default 'na'")
     private String level;
 
-    @Column(name = "unit_no")
+    @Column(name = "unit_no", columnDefinition = "varchar(255) default 'na'")
     private String unit;
 
-    @Column(name = "building_name")
+    @Column(name = "building_name", columnDefinition = "varchar(255) default 'na'")
     private String buildingName;
 
     @Column(name = "postal_code")
@@ -86,40 +86,40 @@ public class CorporateEntity {
     @Column(name = "primary_ssic_description")
     private String primarySsicDescription;
 
-    @Column(name = "primary_user_described_activity")
+    @Column(name = "primary_user_described_activity", columnDefinition = "varchar(255) default 'na'")
     private String primaryUserDescribedActivity;
 
-    @Column(name = "secondary_ssic_code")
-    private int secondarySsicCode;
+    @Column(name = "secondary_ssic_code", columnDefinition = "varchar(20) default 'na'")
+    private String secondarySsicCode;
 
-    @Column(name = "secondary_ssic_description")
+    @Column(name = "secondary_ssic_description", columnDefinition = "varchar(255) default 'na'")
     private String secondarySsicDescription;
 
-    @Column(name = "secondary_user_described_activity")
+    @Column(name = "secondary_user_described_activity", columnDefinition = "varchar(255) default 'na'")
     private String secondaryUserDescribedActivity;
 
     @Column(name = "no_of_officers")
     private int noOfOfficers;
 
-    @Column(name = "former_entity_name")
+    @Column(name = "former_entity_name", columnDefinition = "varchar(255) default 'na'")
     private String formerEntityName;
 
-    @Column(name = "paid_up_capital_currency")
+    @Column(name = "paid_up_capital_currency", columnDefinition = "varchar(10) default 'na'")
     private String paidUpCapitalCurrency;
 
-    @Column(name = "paid_up_capital_ordinary")
+    @Column(name = "paid_up_capital_ordinary", columnDefinition = "varchar(20) default 'na'")
     private String paidUpCapitalOrdinary;
 
-    @Column(name = "paid_up_capital_preference")
+    @Column(name = "paid_up_capital_preference", columnDefinition = "varchar(20) default 'na'")
     private String paidUpCapitalPreference;
 
-    @Column(name = "paid_up_capital_others")
+    @Column(name = "paid_up_capital_others", columnDefinition = "varchar(20) default 'na'")
     private String paidUpCapitalOthers;
 
-    @Column(name = "uen_of_audit_firm")
+    @Column(name = "uen_of_audit_firm", columnDefinition = "varchar(255) default 'na'")
     private String uenOfAuditFirm;
 
-    @Column(name = "name_of_audit_firm")
+    @Column(name = "name_of_audit_firm", columnDefinition = "varchar(255) default 'na'")
     private String nameOfAuditFirm;
 
 }

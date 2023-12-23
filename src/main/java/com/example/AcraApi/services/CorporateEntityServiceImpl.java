@@ -58,6 +58,24 @@ public class CorporateEntityServiceImpl implements CorporateEntityService {
         corporateEntityToUpdate.setAccountDueDate(corporateEntity.getAccountDueDate());
         corporateEntityToUpdate.setAnnualReturnDate(corporateEntity.getAnnualReturnDate());
 
+        corporateEntityToUpdate.setNoOfCharges(corporateEntity.getNoOfCharges());
+        corporateEntityToUpdate.setPrimarySsicCode(corporateEntity.getPrimarySsicCode());
+        corporateEntityToUpdate.setPrimarySsicDescription(corporateEntity.getPrimarySsicDescription());
+        corporateEntityToUpdate.setPrimaryUserDescribedActivity(corporateEntity.getPrimaryUserDescribedActivity());
+        corporateEntityToUpdate.setSecondarySsicCode(corporateEntity.getSecondarySsicCode());
+        corporateEntityToUpdate.setSecondarySsicDescription(corporateEntity.getSecondarySsicDescription());
+        corporateEntityToUpdate.setSecondaryUserDescribedActivity(corporateEntity.getSecondaryUserDescribedActivity());
+
+        corporateEntityToUpdate.setNoOfOfficers(corporateEntity.getNoOfOfficers());
+        corporateEntityToUpdate.setFormerEntityName(corporateEntity.getFormerEntityName());
+        corporateEntityToUpdate.setPaidUpCapitalCurrency(corporateEntity.getPaidUpCapitalCurrency());
+        corporateEntityToUpdate.setPaidUpCapitalOrdinary(corporateEntity.getPaidUpCapitalOrdinary());
+        corporateEntityToUpdate.setPaidUpCapitalPreference(corporateEntity.getPaidUpCapitalPreference());
+        corporateEntityToUpdate.setPaidUpCapitalOthers(corporateEntity.getPaidUpCapitalOthers());
+
+        corporateEntityToUpdate.setUenOfAuditFirm(corporateEntity.getUenOfAuditFirm());
+        corporateEntityToUpdate.setNameOfAuditFirm(corporateEntity.getNameOfAuditFirm());
+
         return corporateEntityRepository.save(corporateEntityToUpdate);
     }
 

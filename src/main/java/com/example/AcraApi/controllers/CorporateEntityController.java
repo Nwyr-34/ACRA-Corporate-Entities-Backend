@@ -30,26 +30,26 @@ public class CorporateEntityController {
     }
 
     //Put or Update
-    @PutMapping("/entities/{uen}")
+    @PutMapping("/{uen}")
     public CorporateEntityDto updateCorporateEntity(@PathVariable String uen, @RequestBody SaveCorporateEntityDto resource) {
         CorporateEntity corporateEntity = convertToEntity(resource);
         return convertToResource(corporateEntityService.update(uen, corporateEntity));
     }
 
     //Get all
-    @GetMapping("/entities")
+    @GetMapping
     public List<CorporateEntity> getAllCorporateEntities() {
         return corporateEntityService.findAll();
     }
 
     //Get by UEN (id)
-    @GetMapping("/entities/{uen}")
+    @GetMapping("/{uen}")
     public CorporateEntityDto getCorporateEntityByUen(@PathVariable String uen) {
         return convertToResource(corporateEntityService.findByUen(uen));
     }
 
     //Delete
-    @DeleteMapping("/entities/{uen}")
+    @DeleteMapping("/{uen}")
     public void deleteCorporateEntity(@PathVariable String uen) {
         corporateEntityService.delete(uen);
     }
