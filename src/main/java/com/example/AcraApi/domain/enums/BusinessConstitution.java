@@ -2,5 +2,6 @@ package com.example.AcraApi.domain.enums;
 
 public enum BusinessConstitution {
     Partnership,
-    SoleProprietor
+    SoleProprietor,
+    na // not applicable
 }

@@ -30,6 +30,7 @@ public class CorporateEntity {
     @Column(nullable = false, name = "entity_name")
     private String entityName;
 
+
     @Column(name = "entity_type_description")
     private EntityType entityTypeDescription;
 

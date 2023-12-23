@@ -9,6 +9,7 @@ public enum EntityStatus {
     StruckOff,
     DissolvedMembers, // Dissolved (Members' Voluntary Winding Up)
     DissolvedCompulsory, // Dissolved (Compulsory Winding Up)
-    InLiquidation, // In Liquidation
+    InLiquidation, // In Liquidation Members' Voluntary Winding Up
+    na // Not Applicable
 
 }
