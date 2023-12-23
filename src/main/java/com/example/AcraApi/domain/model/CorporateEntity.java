@@ -4,10 +4,7 @@ import com.example.AcraApi.domain.enums.BusinessConstitution;
 import com.example.AcraApi.domain.enums.CompanyType;
 import com.example.AcraApi.domain.enums.EntityStatus;
 import com.example.AcraApi.domain.enums.EntityType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
@@ -32,15 +29,19 @@ public class CorporateEntity {
 
 
     @Column(name = "entity_type_description")
+    @Enumerated(EnumType.STRING)
     private EntityType entityTypeDescription;
 
     @Column(name = "business_constitution_description")
+    @Enumerated(EnumType.STRING)
     private BusinessConstitution businessConstitutionDescription;
 
     @Column(name = "company_type_description")
+    @Enumerated(EnumType.STRING)
     private CompanyType companyTypeDescription;
 
     @Column(name = "entity_status_description")
+    @Enumerated(EnumType.STRING)
     private EntityStatus entityStatusDescription;
 
     @Column(name = "registration_incorporation_date")
