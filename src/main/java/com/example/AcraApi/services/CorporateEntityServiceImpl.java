@@ -31,7 +31,7 @@ public class CorporateEntityServiceImpl implements CorporateEntityService {
         return corporateEntityRepository.findById(uen).orElseThrow(() -> new CorporateEntityNotFoundException("Corporate Entity with UEN: " + uen + " not found"));
     }
 
-    @Transactional
+    @Override
     public CorporateEntity update(String uen, CorporateEntity corporateEntity) {
         CorporateEntity corporateEntityToUpdate = corporateEntityRepository.findById(uen)
                 .orElseThrow(() -> new CorporateEntityNotFoundException("Corporate Entity with UEN: " + uen + " not found"));

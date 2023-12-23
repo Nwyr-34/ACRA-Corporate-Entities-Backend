@@ -120,6 +120,6 @@ public class CorporateEntity {
     private String uenOfAuditFirm;
 
     @Column(name = "name_of_audit_firm")
-    private String nameOfAuditFirm1;
+    private String nameOfAuditFirm;
 
 }
