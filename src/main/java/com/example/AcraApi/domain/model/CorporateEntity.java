@@ -89,7 +89,7 @@ public class CorporateEntity {
     @Column(name = "primary_user_described_activity", columnDefinition = "varchar(255) default 'na'")
     private String primaryUserDescribedActivity;
 
-    @Column(name = "secondary_ssic_code", columnDefinition = "varchar(20) default 'na'")
+    @Column(name = "secondary_ssic_code", columnDefinition = "varchar(255) default 'na'")
     private String secondarySsicCode;
 
     @Column(name = "secondary_ssic_description", columnDefinition = "varchar(255) default 'na'")

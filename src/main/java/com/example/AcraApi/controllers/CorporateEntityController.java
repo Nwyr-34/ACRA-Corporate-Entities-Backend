@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/v1/entities")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class CorporateEntityController {
     @Autowired
     private final ModelMapper mapper;
